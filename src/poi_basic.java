@@ -22,7 +22,7 @@ public class poi_basic {
 		XSSFSheet sheet2 = workbook.createSheet("대덕인재개발원2");
 		XSSFRow xrow = null;
 		Cell cell = null;
-
+		
 		CellStyle style = workbook.createCellStyle();
 		style.setFillForegroundColor(IndexedColors.LIGHT_GREEN.getIndex());
 		style.setFillPattern(FillPatternType.FINE_DOTS);
@@ -40,6 +40,7 @@ public class poi_basic {
 		cell.setCellValue("2번!");
 
 		System.out.println("커밋1");
+		System.out.println("커밋2");
 
 		for (int i = 3; i < 10; i++) {
 			xrow = sheet.createRow(i);
